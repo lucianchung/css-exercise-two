@@ -1,13 +1,43 @@
 body {
-  background-color: #ff0000;
-  color: #0000FF;
+  font-family: Arial;
+  font-size: 16px;
+  background-color: #fff;
+  color: #000;
 }
 
 nav {
-  background-color: rgba(0,0,0,.5);
+  background-color: rgba(0,0,0,1);
   float: left;
   position: fixed;
   width: 100%;
+}
+
+a {
+  color: #fff;
+  font-size: 1.2em;
+  text-decoration: none;
+  text-transform: capitalize /* why doesn't this work? */
+}
+
+a:hover { color: #aaa; }
+a:visited {color: #888; }
+
+figcaption {
+  color: #aaa;
+  font-family: sans-serif;
+  font-size: .75em;
+}
+
+h1 {
+  font-family: "Arial Black";
+  font-size: 3em;
+  font-weight: normal;
+}
+
+h3 {
+  color: #888;
+  font-size: 1.5em;
+  line-height: 1.2em;
 }
 
 .logo {
@@ -32,6 +62,11 @@ nav {
   float: right;
 }
 
+.author {
+  color: #aaa;
+  text-transform: capitalize; /* why doesn't this work? */
+}
+
 ul {
   list-style-type: none;
   float: right;
@@ -49,4 +84,8 @@ article {
 .container {
   margin: 0 auto;
   width: 50%;
+}
+
+p {
+  line-height: 1.5em;
 }
